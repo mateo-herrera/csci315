@@ -1,0 +1,59 @@
+------------------------------------------------------------
+Lab 10 -- Feedback
+------------------------------------------------------------
+
+Prelab: 30/30
+    Problem 1 [15/15]
+        [4 points] fdump accepts command line parameters.  
+        [6 points] fdump reads the file correctly.
+        [5 points] fdump calls hexdump function to produce an output.
+
+    Problem 2 [15/15]
+        [4 points] 2.1: Run your fdump program with the following parameters: filename = hexdump.c, 
+                        offset=1000, size=128. Explain what you see.
+        [4 points] 2.2: Run your fdump program with the following parameters: filename = fdump, 
+                        offset=500, size=128. Explain what you see.
+        [4 points] 2.3: Compare the output you produced for answers (2.1) and (2.2). 
+                        Looking at the hexadecimal dump on the left, in both cases, makes it clear 
+                        that inside both files, you store information in binary encoding. However, 
+                        the data to the right of the hexadecimal dump shows something human-readable 
+                        for (2.1) and non-human readable for (2.2). In this answer, you are asked to 
+                        explain why this is the case.
+        [3 points] 2.4: Explain how file(1) works.
+        
+
+Lab: 70/70
+    Problem 1 [20/20] file_stat prints the following.
+        [3 points] File system block size
+        [2 points] Maximum file name length
+        [2 points] File protection string
+        [2 points] File protection mode
+        [2 points] Owner user name
+        [2 points] Owner group name
+        [3 points] mode (file, link directory, socket etc.)
+        [2 points] Time of last access
+        [2 points] Time of last status change
+
+    Problem 2 [20/20]
+        2.1: Combine file_stat.c with read_dir.c to create traverse.c that prints:
+            [4 points] The value of the smallest, the largest, and the average file size.
+            [4 points] Total number of directories.
+            [4 points] Total number of regular files.
+            [4 points] The name of the file that was most recently modified, and the one that was least recently modified in the directory tree.
+        [4 points] 2.2 & 2.3: Modify the code so that the symbolic link is not traversed as a directory.
+
+
+    Problem 3 [8/8] answers.txt
+        [2 points] 3.1: Provide an example of an operation on a regular file which changes only its time of last status change.
+        [2 points] 3.2: Provide an example of an operation on a regular file which changes its time of modification.
+        [2 points] 3.3: Provide an example of an operation on a regular file which changes its time of last access.
+        [2 points] 3.4: Provide an example of an application where knowing the maximum file name length is helpful. 
+                        In this item, you can simply describe a scenario in which a given program needs to have the maximum length of file names.
+
+    Problem 4 [22/22]
+        [11 points] sender.c works properly.
+        [11 points] receiver.c works properly.
+
+Grade: 100/100
+Comment: Good work!
+

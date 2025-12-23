@@ -1,0 +1,11 @@
+1.b.
+The num variable is not shared between processes as it increments by 3 for the parent and only by 1 for the child. So the child process has its own stack memory seperated from that of the parent process.
+
+2.a.
+The parent pid is 2396662, while the child is 0. The initial (x,y) of the child is (3.140000, 2.180000), then it sees (0,0). Before wait for the chid the parent sees (3.140000, 2.180000) and after waiting for the child it sees (3.140000, 2.180000). I stayed the same for both at 7.
+
+2.b.
+ By running the program fork-data I was able to conclude that the child and parent process do not share a stack memory but have seperates as the changes made by the child process are not seen in the parent.
+
+2.d.
+If one proccess closes the file using close(); the other proccess is still able to access the files contents. Yes if the child reads from the file the parent will leave where it left off as they share the pointer to the file when it is opened.

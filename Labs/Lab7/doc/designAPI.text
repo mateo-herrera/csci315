@@ -1,0 +1,13 @@
+
+
+void *first_fit(size_t size)
+
+    -this function uses the first fit method to allocate, which uses the first block that can hold the block being allocated
+
+void *best_fit(size_t size)
+
+    -this function uses the best_fit method to allocate, which uses the block which best fits the size of the block being allocated.
+
+void *worstfit(size_t size)
+
+    -this function uses the worst fit method to allocate the block, by finding any block which will fit the allocated block.

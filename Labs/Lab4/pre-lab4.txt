@@ -1,0 +1,12 @@
+Problem 1:
+    For all 3 of the commands upon success zero is returned, but if an error arises -1 is returned. For read and socket the file descriptor is returned by a successful call will be the lowest-numbered file descriptor not currently open for the process. All 3 of the functions are communication methods as well.
+
+Probelm 2:
+    1. The client uses the servers IP adress to connect to the server allowing for communication, while the server uses a while loop to recieve the connection from the client.
+    2. Bind assigns the IP/ port number to the socket where the connection comess from, used in server.
+    3. Connect allows for the connection of the socket to the adress specificed, used in client.
+    4. Listen is used by the server to set up the socekt to recieve incoming client connections.
+    5. Accept extracts the first connection request on the queue of connections pending from the listening socket on the server.
+    6. The send, sendtom and sendmsg system calls will be used to transit message to other sockets. The recv, recvfrom, and recvmsg call will be used to recieve message from a socket.
+
+

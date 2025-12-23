@@ -1,0 +1,13 @@
+Problem 2:
+
+    1.
+    Mutex allows for only one thread to lock and unlock a critical section of code at a time, while semaphores allows access to a resource by multiple threads(counting) or binary is similar to mutex but doesn't have ownership allowing for any thread to unlock/ lock.
+
+    2.
+    pthread_mutex_init - creates a mutex/ destroys a mutex.
+    pthread_mutex_lock - locks a mutex.
+    pthread_mutex_unlock - unlocks a mutex.
+    sem_init - initializes a semaphore, with value either 0 or 1, and sets whether it can be shared between threads.
+    sem_wait - decrements the value of a semaphore if value >0, if value == 0 then thread is blocked unitl value is incremented.
+    sem_post - increments the value of semaphore, unblocking one or more threads waiting.
+

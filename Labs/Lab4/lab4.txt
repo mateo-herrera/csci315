@@ -1,0 +1,13 @@
+Problem 3:
+
+    1. TCP sockets are interprocess communication b/c they provide a channel of communication between processes, but for TCP sockets the processes do not need to be related by fork.
+
+    2. The socket function is mainly provided by the kernel, as it manages low level networking operations and provides system calls such as TCP, socket buffers.
+
+    3. Pipes is used when communication is unidirectional, process are related, communication on same machine, and allows for low latency. Sockets are used for bidirectional communication, processes are unrelated, and communication between different machines.
+
+    4. gethostbyname() converts the hostname into the ip address, which the hostname is a arg to the echoreq program.
+
+    5. gethostbyname() will be replaced by getaddrinf() eventually as ipv4 is being converted to ipv6 which getaddrinfo() handles both while gethostbyname() only handles ipv4.
+
+

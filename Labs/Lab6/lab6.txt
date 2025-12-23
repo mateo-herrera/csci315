@@ -1,0 +1,11 @@
+1.1
+    When I run my program it works as intened with no neighboring philosophers eating at the same time.
+
+1.2
+    The program could deadlock if 1,3, & 5 are eating or if 0,2, & 4 are eating as the neighboring philosophers would be unable to start eating.
+
+2.2
+    napping 0-2 seconds after the first chopstick was picked up using the mutex lock causes for a deadlock to eventually occur as each philosopher picks up there first chopstick and waits indefinetly for the second.
+
+3.1
+    the first solution reduces deadlocking greatly but its still possible to enter a circular wait loop, and the second solution eleminates deadlocking but can result in starvation, where one chopstick is used more than others.

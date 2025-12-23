@@ -1,0 +1,9 @@
+1.
+No they do not match the order as they were created.
+
+2.
+No they are not predictable as thread 3 rarely prints as thread 1 and thread 2 are constantly being printed in a scrambled order.
+
+3. Observations from Q2
+
+question 2 works as intened and prints the day of the week, date, and time from the hour, to the minute, and the second, as well as the year.

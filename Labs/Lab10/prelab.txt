@@ -1,0 +1,40 @@
+(2.1)-
+We see the hex conversion for the bytes 1000-1128 in the file hexdump.c as well as the text on the file, so it starts at line 33 and ends at line 36.
+     PAYLOAD HEXDUMP:
+
+     0000000: 2063 6f75 6e74 6572 2066 6f72 2074 6865    counter for the
+     0000010: 206e 756d 6265 7220 6f66 2062 7974 6573    number of bytes
+     0000020: 2028 6861 6c66 2074 6865 206e 756d 6265    (half the numbe
+     0000030: 7220 6f66 2068 6578 2064 6967 6974 7329   r of hex digits)
+     0000040: 0a0a 2020 2020 2070 7269 6e74 6628 225c   ..     printf("\
+     0000050: 6e20 2020 2020 5041 594c 4f41 4420 4845   n     PAYLOAD HE
+     0000060: 5844 554d 503a 5c6e 2229 3b0a 2020 2020   XDUMP:\n");.
+     0000070: 2077 6869 6c65 2028 6220 3c20 6c65 6e67    while (b < leng
+
+(2.2)-
+We see the hex conversion for the butes 1000-1128 in the file dump as the text in the executable file.
+     PAYLOAD HEXDUMP:
+
+     0000000: 0000 0000 0800 0000 0000 0000 0400 0000   ................
+     0000010: 0400 0000 5803 0000 0000 0000 5803 4000   ....X.......X.@.
+     0000020: 0000 0000 5803 4000 0000 0000 4400 0000   ....X.@.....D...
+     0000030: 0000 0000 4400 0000 0000 0000 0400 0000   ....D...........
+     0000040: 0000 0000 53e5 7464 0400 0000 3803 0000   ....S.td....8...
+     0000050: 0000 0000 3803 4000 0000 0000 3803 4000   ....8.@.....8.@.
+     0000060: 0000 0000 2000 0000 0000 0000 2000 0000   .... ....... ...
+     0000070: 0000 0000 0800 0000 0000 0000 50e5 7464   ............P.td
+
+(2.3)-
+In the reason the text in 2.1 is human readable compared to text of 2.2 is because 2.1 is a ucompiled c file so it is simply the code within the file while the 2.2 text is a compiled c file(executable) which is machine code.
+
+(2.4)-
+- /usr/bin/file is a executable file type of 64 bit binary
+- ~cs315/Labs/Lab10/work is a pdf file type
+- ~cs315/Labs/Lab10/beauty is JPEG file type
+- hexdump.o is a object file of 64 bit binary with debug_info
+- hexdump.h is header file of C source, & ASCII text
+
+file figures out the type of content in the file by conducting 3 tests filesystem test which is based of the result from the return from 'stat' system call. Magic test which looks for data in particular fixed formats, and the language test which searchs for particular strings which can appear anywhere in the first few blocks of the file.
+Source - https://www.geeksforgeeks.org/file-command-in-linux-with-examples/
+
+

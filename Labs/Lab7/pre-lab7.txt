@@ -1,0 +1,28 @@
+Problem 1:
+
+    1.
+    Double linked list are suitable as the node will hold a block of memory and the address of the next and previous blocks will be stored making it easily traversable through the list.
+
+    2.
+    A binary search tree would be another suitable option as it would allow for better search efficiency.
+
+    3.
+    Is when free memory is scattered in non-contiguous blocks, an example is a program allocated three continous blocks of memory then freeing the 2 second(middle) one.
+
+    4.
+    Is when a memory block allocated to a process is larger than the process actually needs, an example is 4kb block of memory being allocated but only 2kb's are used.
+
+    5.
+    First-fit allocation policy is when a OS searches through the list of free blocks of memory, starting at the beginning and going until it finds a block that is large enough to accommodate the memory request. This block is split into two with one portion allocated to the process and the remaining free block.
+    Advantage- Is simple and efficient
+    Disadvantage- poor performance when memory is highly fragmented.
+
+    6.
+    Best-fit allocation policy is when the OS searches through the list of free blocks of memory to find the block that is closest in size to the memory request from the process. Once the block is found its split into two one allocating the process, and the remainging free block.
+    Advantage- improved memory utilization, allocated the smallest block of memory that is sufficient.
+    Disadvantage- More complex search algorithm which can take some time.
+
+    7.
+    Worst-fit allocation policy is when the whole memory is searched for the largest hole/partition and the process is allocated there.
+    Advantages- Large internal fragmentation allowing for small processes to be placed in leftover.
+    Disadvantages- Is slow because it traverses all partitions in the memory.

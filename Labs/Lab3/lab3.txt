@@ -1,0 +1,35 @@
+Problem 1
+
+    1.
+When trying to compile summation.c there is an undefined reference to 'pow' in the function 'SumExp'.
+
+    2.
+The linker flag used for pow is -lm so to compile the program its "gcc -std=gnu99 -Wall summation.c -o summation -lm"
+
+Problem 2
+
+    1.
+The main thread uses the structure thread_args which consists of int for tid, int for a, int for b, double for x, and double for result. Then when the thread is being created a is calculated by multiplying the increment by the thread number, and b is similar with the increment multiplied by the thread number plus 1, x is set to 2, and the tid is set to thread number and result is set to 0.
+
+    2.
+The function calloc is allocating memory space to the heap, calloc is preferable rather than malloc because the type being allocated for is a structure and when using calloc it initializes the structures members to 0 ensuring no other values are initialized to the members causing future errors.
+
+    3.
+A detached thread is when a thread becomes independent from the parent, and the calling thread will not wait for it to finish and the thread will run in the background till it terminates. This program should not create a detached state as the current thread executed is dependent on the previous threads.
+
+    4.
+The return value of the thread being joined and created is stored in the int ret_val which records if there was an error or if it was successful. The result of thread is stored in the thread_args structure named tstatus member result. But the combined result of all the threads is stored in the double summation.
+
+    5.
+The program would only start the threads, which could be just one or could be multiple but never finish them leaving the result as "Thread # starting a= 0, b= #(arg inputted), x= 2.000000".
+
+    6.
+When the execl command executes "/bin/ls" in a child thread the threads start then the contents of current directory print causing for the threads and program to terminate.
+
+Problem 3
+
+    1.
+No you can not guarantee the date printed is the actual termination time as it could be off by a few milliseconds due to other threads slowing down the exit, also it could be skewed as the threads wait for each other to terminate.
+
+    2.
+The only issue is that they terminate at the same time which doesnt give an accurate time of when the thread actually finished its proccess. This could be solved by creating the threads in a detached state.

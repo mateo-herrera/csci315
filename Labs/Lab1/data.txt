@@ -1,0 +1,2 @@
+This is a test for processes created with fork
+this is another line

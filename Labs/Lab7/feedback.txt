@@ -1,0 +1,31 @@
+------------------------------------------------------------
+Lab 7 -- Feedback
+------------------------------------------------------------
+
+Prelab: 30/30
+    [2 points] Reflect on how processes will cause insertions and removals in the doubly-linked lists that keep track of the memory that is allocated or free. Discuss whether doubly-linked lists are suitable for use in a custom memory allocator. 
+    [2 points] Propose one or more data structures that might work as well or possibly better than doubly-linked lists for keeping track of allocated and free memory. 
+    [1 points] Define the term external fragmentation and describe a scenario where it occurs. 
+    [1 points] Define the term internal fragmentation and describe a scenario where it occurs. 
+    [2 points] Describe the first-fit allocation policy. Give one advantage and one disadvantage of its use. 
+    [2 points] Describe the best-fit allocation policy. Give one advantage and one disadvantage of its use. 
+    [2 points] Describe the worst-fit allocation policy. Give one advantage and one disadvantage of its use. 
+
+    [9 points] Expand dnode to add size_t.
+    [4 points] Write dlist_print.
+    [5 points] Write a test program.
+
+Lab: 70/70
+    [12 points] The correct implementation of allocator_init.
+    [12 points] A clear explanation of the design of your supporting functions for dealing with various policies for contiguous memory allocation (best-fit, first-fit, and worst-fit). Your document should describe the API of your functions and how they are used in your custom memory allocator.
+    [12 points] The correct implementation of allocate.
+    [7 points] Your correct modification to the doubly-linked list module given to you, which should support your deallocate implementation.
+    [12 points] The correct implementation of deallocate.
+    [15 points] The implementation of a test suite that can verify that all the functionality of your custom memory allocator works without bugs.
+    [-10 points] The student hasn’t submitted a Makefile that builds all the files used in the implementation and in the testing of the custom memory allocator.
+
+Additional Challenge: 0/30 - not attempted
+
+Grade: 90/100
+Comment: Good work! -10 for Makefile that doesn't build all files
+

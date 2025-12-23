@@ -1,0 +1,34 @@
+1.1-
+Both types of fragmentation internal and external are possible with worst fit, best fit, and first fit.
+
+1.2-
+You could test the amount of time it takes to find a fit for the memory allocation, and also the amount of time it takes deallocate memory.
+
+2.1-
+Instead of allocating then deallocating the memory immediately a more representative program should randomize
+between allocating and deallocating.
+
+pseudo-code:
+
+while( i< requests){
+
+    int operation = rand() %2;
+
+    if(operation == 0){
+
+        //allocate
+
+    }else{
+
+        //deallocate
+
+    }
+
+    i++;
+
+}
+
+compute average_frag and print;
+
+2.2-
+The best-fit allocation algorithm works the best for the allocation/deallocation simulation. This algorithm had the lowest average for the average fragmentation, also it had one of the best confidence intervals with it not being to large or to small but right in the middle. The best-fit policy also worked best because it allowed for memory to properly be allocatied to the block which best suites it size not allowing for as much fragmentation.

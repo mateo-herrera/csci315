@@ -1,0 +1,8 @@
+1.
+The heap is shared between parent and child processes.
+
+2.
+The reason they can access the same pipe is due to forking which causes for the child to inherit the file descriptor of the parent.
+
+3.
+A difference is that pipes are created with pipe() while files are created with open() or creat(). A similarity is they both use close() to release system resources.

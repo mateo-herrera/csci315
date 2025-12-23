@@ -1,0 +1,13 @@
+------------------------------------------------------------
+Lab 9 -- Feedback
+------------------------------------------------------------
+
+Problem 1 [30/30] Create ishell.c and let it take commands. Do not use system(3).
+Problem 2 [15/15] Print return code of the program.
+Problem 3 [15/15] Execute two commands separated by ';'.
+Problem 4 [15/15] Show directory listing by pressing enter key twice.
+Problem 5 [25/25] Implement an extra feature.
+
+Grade: 100/100
+Comment: Good work!
+
